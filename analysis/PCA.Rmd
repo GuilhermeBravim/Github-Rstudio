@@ -1,0 +1,33 @@
+---
+title: "PCA"
+author: "GilhermeBravim"
+date: "2022-08-05"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+# Introduction
+
+```{r}
+data("iris")
+```
+
+## carregando biblioteca
+```{r}
+library(tidyverse)
+```
+
+## Realizando analise
+```{r}
+iris%>%
+    ggplot(aes(x=Species,y=Sepal.Length,fill=Species))+
+    geom_boxplot()+
+    theme(legend.position = "none")
+```
+
+
+
+
+
+
